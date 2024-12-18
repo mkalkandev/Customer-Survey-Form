@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=,, initial-scale=1.0" />
+    <title>Customer Satisfaction Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">Customer Satisfaction Survey</h1>
+        <p class="description">
+          Thank you for taking the time to help us improve the platform.
+        </p>
+      </header>
+      <form action="https://httpbin.org/post" method="post" class="survey-form">
+        <div class="form-group">
+          <label class="name-label font-weight" for="name">Full name:</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="email-label font-weight" for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="age-label font-weight" for="age">Age:</label>
+          <select class="form-control" name="age" id="age" required>
+            <option value="">Select option</option>
+            <option value="">18-25</option>
+            <option value="">26-35</option>
+            <option value="">36-45</option>
+            <option value="">46 and above</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="font-weight" for="telephone">Telephone:</label>
+          <input
+            class="form-control"
+            type="tel"
+            id="telephone"
+            placeholder="Enter your number"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="font-weight" for="service">Service Quality:</label>
+          <label for="service1"
+            ><input
+              class="input-radio"
+              type="radio"
+              name="quality"
+              id="service1"
+              value="option1"
+            />Excellent</label
+          >
+          <label for="service2"
+            ><input
+              class="input-radio"
+              type="radio"
+              name="quality"
+              id="service2"
+              value="option1"
+            />Good</label
+          >
+          <label for="service3"
+            ><input
+              class="input-radio"
+              type="radio"
+              name="quality"
+              id="service3"
+            />Average</label
+          >
+          <label for="service4"
+            ><input
+              class="input-radio"
+              type="radio"
+              name="quality"
+              id="service4"
+            />Poor</label
+          >
+          <label for="service5"
+            ><input
+              class="input-radio"
+              type="radio"
+              name="quality"
+              id="service5"
+            />Very Poor</label
+          >
+        </div>
+        <div class="form-group">
+          <label class="font-weight" for="about"
+            >How did you hear about us?</label
+          >
+          <label for="social"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="about"
+              id="social"
+            />Social Media</label
+          >
+          <label for="friend"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="about"
+              id="friend"
+            />Friend/Word of Mouth</label
+          >
+          <label for="google"
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="about"
+              id="google"
+            />Google Search</label
+          >
+          <label for="other">
+            <input
+              class="input-checkbox"
+              type="checkbox"
+              name="about"
+              id="other"
+            />Other</label
+          >
+        </div>
+        <div class="form-group">
+          <label class="font-weight" for="check"
+            >On a scale of 1 to 10, how would you rate us overall?</label
+          >
+          <label for="check1"
+            ><input
+              class="input-checkbox"
+              type="radio"
+              name="check"
+              id="check1"
+            />1</label
+          >
+          <label for="check2"
+            ><input
+              class="input-checkbox"
+              type="radio"
+              name="check"
+              id="check2"
+            />2</label
+          >
+          <label for="check3"
+            ><input
+              class="input-checkbox"
+              type="radio"
+              name="check"
+              id="check3"
+            />3</label
+          >
+          <label for="check4"
+            ><input
+              class="input-checkbox"
+              type="radio"
+              name="check"
+              id="check4"
+            />4</label
+          >
+          <label for="check5"
+            ><input
+              class="input-checkbox"
+              type="radio"
+              name="check"
+              id="check5"
+            />5</label
+          >
+        </div>
+        <div class="form-group">
+          <label class="font-weight" for="comment"
+            >Do you have any additional comments you'd like to share?</label
+          >
+          <textarea
+            class="input-textarea"
+            name="comment"
+            id="comment"
+            rows="5"
+            placeholder="Enter your message..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button class="reset-button" type="reset">Sıfırla</button>
+          <button class="submit-button" type="submit">Gönder</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
